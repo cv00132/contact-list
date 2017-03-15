@@ -12,7 +12,7 @@ module.exports = (app) => {
     next();
   });
   // Add your routes here
-  app.post('/contacts/add', ContactController.create);
+  app.post('/contacts', ContactController.create);
   app.get('/contacts', ContactController.listAll);
   app.get('/contacts/:id', ContactController.listOne);
   app.put('/contacts/:id', ContactController.update);
